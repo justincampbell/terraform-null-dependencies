@@ -1,4 +1,4 @@
-module "security-group" {
+module "A" {
   source  = "terraform-aws-modules/security-group/aws"
   version = "2.14.0"
 
@@ -6,7 +6,7 @@ module "security-group" {
   vpc_id = "test"
 }
 
-module "security-group" {
+module "B" {
   source  = "terraform-aws-modules/security-group/aws"
   version = "2.13.0"
 
@@ -14,7 +14,7 @@ module "security-group" {
   vpc_id = "test"
 }
 
-module "security-group" {
+module "C" {
   source  = "terraform-aws-modules/security-group/aws"
 
   name = "test"
