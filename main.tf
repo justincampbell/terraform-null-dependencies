@@ -6,7 +6,7 @@ module "A" {
   vpc_id = "test"
 }
 
-module "B" {
+module "A" {
   source  = "terraform-aws-modules/security-group/aws"
   version = "2.13.0"
 
@@ -14,7 +14,7 @@ module "B" {
   vpc_id = "test"
 }
 
-module "C" {
+module "A" {
   source  = "terraform-aws-modules/security-group/aws"
 
   name = "test"
